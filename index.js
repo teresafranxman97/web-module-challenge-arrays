@@ -158,12 +158,16 @@ hint - you can use the .includes method to help you solve this */
 console.log(originalFlavors.includes("Chocolate")); */
 
 
-let chocArray = [];
-function filterByWord(chocoWord, searchChoco){
-    if()
+function filterByWord(array, searchFor){
+    let newArray = []
+    for (let i = 0; i < array.length; i++){
+        if (array[i].includes(searchFor)){
+          newArray.push(array[i]);
+        }
+    }
+  return newArray
 }
-console.log(originalFlavors.includes("Chocolate"));
-
+   console.log(filterByWord(originalFlavors, "Chocolate"));
 
 /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/ 
 
